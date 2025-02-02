@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing K-pop Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Idols Therapy ✨</h1>
+        </header>
+
+        <main>
+            <!-- Ensure the file path is correct -->
+            <section class="exercise">
+                <img id="img1" class="hidden" src="exercises/exercise1.gif" alt="Дыхание от тревоги">
+                <h2>🌸 Дыхание от тревоги</h2>
+                <p>Вдохните глубоко через нос на 4 секунды, задержите дыхание на 7 секунд, выдохните медленно через рот на 8 секунд.</p>
+                <button onclick="startTimer(30, 'timer1', 'img1')">Старт</button>
+                <span id="timer1">30</span> сек.
+            </section>
+
+            <section class="exercise">
+                <img id="img2" class="hidden" src="exercises/exercise2.gif" alt="Дыхание для концентрации">
+                <h2>🔹 Дыхание для концентрации</h2>
+                <p>Равномерно вдыхайте на 3 секунды, затем медленно выдыхайте на 3 секунды. Повторите 10 раз.</p>
+                <button onclick="startTimer(20, 'timer2', 'img2')">Старт</button>
+                <span id="timer2">20</span> сек.
+            </section>
+
+            <section class="exercise">
+                <img id="img3" class="hidden" src="exercises/exercise3.gif" alt="Расслабляющее дыхание">
+                <h2>💜 Расслабляющее дыхание</h2>
+                <p>Глубокий вдох через нос, выдох с расслаблением губ. Представьте, что выдыхаете стресс.</p>
+                <button onclick="startTimer(40, 'timer3', 'img3')">Старт</button>
+                <span id="timer3">40</span> сек.
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
